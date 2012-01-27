@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title></title>
+  	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+	<meta charset="utf-8">
+	<script type="text/javascript" charset="utf-8" src="phonegap-1.2.0.js"></script>
+    
+    <!-- CORE JS FILES -->
+    <script type="text/javascript" charset="utf-8" src="js/core/phonegap-1.2.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/core/jQuery.js"></script>
+        
+    <!-- PLUGINS -->
+    <script type="text/javascript" charset="utf-8" src="js/plugins/ChildBrowser.js"></script>
+    
+    <!-- OUR INIT -->
+    <script type="text/javascript" charset="utf-8" src="js/init.js"></script>
+    
+    <!-- STYLE STUFF -->
+    <link rel="stylesheet" href="css/style.css" />
+    
+  </head>
+  <body onload="app.bodyLoad()"> <!-- CALL TO OUR JS TO LET IT KNOW THE APP IS LOADED -->
+  		<div id="header"></div>
+  		<div id="loginArea"> <!-- If we don't have a user we will show this -->
+			<div id="login" class="btn">Login</div>
+        </div>
+        <div id="status"> <!-- if we do have a user we will show this -->
+        <div id='statusHold' style='text-align:center; width:100%;'><img src='images/loader.gif' id="info"/></div>
+        	<textarea id="statusTXT"></textarea>
+            <div id="statusBTN" class="btn">share</div>
+        </div>
+  </body>
+</html>
