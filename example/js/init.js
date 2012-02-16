@@ -14,7 +14,7 @@ This example will allow you to post to a users wall
 // GLOBAL VARS
 var my_client_id = "XXXXXXXXXXXXXXXXXX", // YOUR APP ID
 	my_secret = "XXXXXXXXXXXXXXXXXXX", // YOUR APP SECRET 
-	my_redirect_uri = "http://www.facebook.com/connect/login_success.html", // LEAVE THIS
+	my_redirect_uri = "https://www.facebook.com/connect/login_success.html", // LEAVE THIS
 	my_type ="user_agent", my_display = "touch"; // LEAVE THIS
 	
 var facebook_token = "fbToken"; // OUR TOKEN KEEPER
@@ -44,7 +44,7 @@ var Facebook = {
 	facebookLocChanged:function(loc){
 		
 		// When the childBrowser window changes locations we check to see if that page is our success page.
-		if (loc.indexOf("http://www.facebook.com/connect/login_success.html") > -1) {
+		if (loc.indexOf("https://www.facebook.com/connect/login_success.html") >= 0) {
 			var fbCode = loc.match(/code=(.*)$/)[1]
 			$.ajax({
 				url:'https://graph.facebook.com/oauth/access_token?client_id='+my_client_id+'&client_secret='+my_secret+'&code='+fbCode+'&redirect_uri=http://www.facebook.com/connect/login_success.html',
