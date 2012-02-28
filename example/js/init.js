@@ -44,7 +44,7 @@ var Facebook = {
 	facebookLocChanged:function(loc){
 		
 		// When the childBrowser window changes locations we check to see if that page is our success page.
-		if (loc.indexOf("https://www.facebook.com/connect/login_success.html") >= 0) {
+		if (loc.indexOf("https://www.facebook.com/connect/login_success.html") >= 0 || loc.indexOf("https://www.facebook.com/connect/login_success.html") > -1) {
 			var fbCode = loc.match(/code=(.*)$/)[1]
 			$.ajax({
 				url:'https://graph.facebook.com/oauth/access_token?client_id='+my_client_id+'&client_secret='+my_secret+'&code='+fbCode+'&redirect_uri=http://www.facebook.com/connect/login_success.html',
