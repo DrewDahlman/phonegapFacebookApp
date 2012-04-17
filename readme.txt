@@ -5,3 +5,5 @@ This app will remember your Facebook authentication and allow you to use the Gra
 
 I've created a blog post tutorial that goes into full detail.
 http://www.drewdahlman.com/meusLabs/?p=88
+
+PLEASE NOTE - This is for Phonegap versions 1.3< A cordova 1.6 release is in the works so sit tight for that. if you can't wait just update your child browser!
