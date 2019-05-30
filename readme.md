@@ -1,4 +1,6 @@
-PHONEGAP FACEBOOK APP
+# THIS IS VERY OUTDATED. Only use as reference.
+
+# PHONEGAP FACEBOOK APP
 This project serves as an example of how to create a Facebook application or functionality within Phonegap using ChildBrowser.
 
 This app will remember your Facebook authentication and allow you to use the Graph API from your app.
